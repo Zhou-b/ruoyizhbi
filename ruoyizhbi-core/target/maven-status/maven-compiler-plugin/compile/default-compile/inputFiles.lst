@@ -1,0 +1,9 @@
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/model/BaseEntity.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/manager/AsyncManager.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/model/dao/SysOperationLogMapper.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/service/SysOperationLogService.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/model/entity/sys/SysOperationLog.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/config/ApplicationConfig.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/aspectj/LogAspect.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/manager/factory/AsyncFactory.java
+/Users/zhoubing/Downloads/code/myworkspace/ruoyizhbi/ruoyizhbi-core/src/main/java/com/yan2b/core/service/impl/SysOperationLogServiceImpl.java
