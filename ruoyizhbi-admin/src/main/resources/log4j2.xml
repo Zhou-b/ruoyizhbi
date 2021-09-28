@@ -90,9 +90,14 @@
   <!--若是additivity设为false，则 子Logger 只会在自己的appender里输出，而不会在 父Logger 的appender里输出。-->
   <Loggers>
     <!--过滤掉spring和mybatis的一些无用的DEBUG信息-->
-    <logger name="org.mybatis" level="info" additivity="false">
+    <logger name="org.mybatis" level="debug" additivity="false">
       <AppenderRef ref="Console"/>
     </logger>
+
+    <!--dao层的mapper可以输出debug级别(目的是打印sql)-->
+    <Logger name="com.yan2b.*.dao" level="debug" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
 
     <Logger name="org.springframework" level="WARN" additivity="false">
       <AppenderRef ref="Console"/>
@@ -105,6 +110,16 @@
 
     <!-- 设置org.hibernate.validator包下的日志只打印WARN及以上级别的日志 -->
     <logger name="org.hibernate.validator" level="WARN" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>
+
+    <!-- 设置io.netty包下的日志只打印WARN及以上级别的日志 -->
+    <logger name="io.netty" level="WARN" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>
+
+    <!-- 设置io.lettuce.core包下的日志只打印WARN及以上级别的日志 -->
+    <logger name="io.lettuce.core" level="WARN" additivity="false">
       <appender-ref ref="Console"/>
     </logger>
 

@@ -2,6 +2,8 @@ package com.yan2b.core.model.dao;
 
 import com.yan2b.core.model.entity.sys.SysOperationLog;
 
+import java.util.List;
+
 /**
  * @author : Gangbb
  * @ClassName : SysOperationLogMapper
@@ -15,4 +17,10 @@ public interface SysOperationLogMapper {
      * @param sysOperationLog 操作日志对象
      */
     public void insertOperationLog(SysOperationLog sysOperationLog);
+
+    /**
+     * 查询所有记录
+     * @return
+     */
+    List<SysOperationLog> selectAll();
 }

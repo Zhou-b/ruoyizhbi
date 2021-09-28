@@ -6,6 +6,8 @@ import com.yan2b.core.service.SysOperationLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author : Gangbb
  * @ClassName : SysOperationLogServiceImpl
@@ -27,4 +29,14 @@ public class SysOperationLogServiceImpl implements SysOperationLogService {
     public void insertOperationLog(SysOperationLog sysOperationLog) {
         sysOperationLogMapper.insertOperationLog(sysOperationLog);
     }
+
+    /**
+     * 查询所有记录
+     */
+    @Override
+    public List<SysOperationLog> selectAll() {
+        return sysOperationLogMapper.selectAll();
+    }
+
+
 }
