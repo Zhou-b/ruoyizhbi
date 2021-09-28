@@ -1,4 +1,9 @@
 spring:
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+  # 数据库配置
   datasource:
     name: ruoyizhbi
     url: jdbc:mysql://127.0.0.1:3306/ruoyizhbi?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai

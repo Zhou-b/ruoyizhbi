@@ -1,8 +1,0 @@
-com/yan2b/web/model/entity/TestMybatis.class
-com/yan2b/web/service/impl/TestMybatisServiceImpl.class
-com/yan2b/AdminApplication.class
-com/yan2b/web/controller/TestController.class
-com/yan2b/web/model/dao/TestMybatisMapper.class
-com/yan2b/web/controller/TestLogAnnotationController.class
-com/yan2b/web/controller/TestMybatisController.class
-com/yan2b/web/service/TestMybatisService.class
