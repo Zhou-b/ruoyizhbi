@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/hello")
-    public String Hello(){
+    public String hello(){
         return "第一个接口";
     }
 }

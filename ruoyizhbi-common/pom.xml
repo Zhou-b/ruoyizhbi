@@ -13,6 +13,21 @@
         common通用工具模块
     </description>
     <dependencies>
+
+        <!-- redis 缓存操作 begin-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- redis 缓存操作 end-->
+
+        <!-- pool 对象池 begin-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+        <!-- pool 对象池 end-->
+
         <!-- SpringBoot yml配置文件编写智能提示  begin-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

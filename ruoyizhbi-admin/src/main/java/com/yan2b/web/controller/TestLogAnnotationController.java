@@ -18,7 +18,7 @@ public class TestLogAnnotationController {
 
     @Log(title = "测试@Log注解", businessType = BusinessType.OTHER)
     @GetMapping("/hello")
-    public String HelloLog(){
+    public String helloLog(){
         return "测试@Log注解，记录操作日志";
     }
 }
