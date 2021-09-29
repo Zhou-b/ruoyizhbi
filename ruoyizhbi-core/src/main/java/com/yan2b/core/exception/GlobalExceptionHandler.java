@@ -9,6 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import javax.servlet.ServletException;
 import javax.xml.ws.http.HTTPException;
@@ -68,6 +69,14 @@ public class GlobalExceptionHandler {
         return ApiRestResponse.error("A0003",e.getMessage());
     }
 
+    /**
+     * MethodArgumentTypeMismatchException 参数类型转换异常
+     */
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ApiRestResponse resolveMethodArgumentNotValidException(MethodArgumentTypeMismatchException ex){
+        String msg = "参数<" + ex.getName() + ">校验失败：" +  ex.getMessage();
+        return ApiRestResponse.error("A0003", msg);
+    }
     /**
      * Exception 基类异常捕捉
      */

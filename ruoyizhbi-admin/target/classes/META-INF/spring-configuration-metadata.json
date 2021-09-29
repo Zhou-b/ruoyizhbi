@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "error",
+      "type": "com.yan2b.web.model.properties.ErrorCodeMessage",
+      "sourceType": "com.yan2b.web.model.properties.ErrorCodeMessage"
+    }
+  ],
+  "properties": [
+    {
+      "name": "error.code-message",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.yan2b.web.model.properties.ErrorCodeMessage"
+    }
+  ],
+  "hints": []
+}

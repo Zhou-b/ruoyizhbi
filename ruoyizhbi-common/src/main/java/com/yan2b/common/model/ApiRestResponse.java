@@ -82,6 +82,17 @@ public class ApiRestResponse extends LinkedHashMap<String, Object>
     }
 
     /**
+     * 返回失败数据
+     *
+     * @return 失败消息
+     */
+    public static ApiRestResponse error()
+    {
+        String message = "操作失败(error)";
+        return ApiRestResponse.error(message);
+    }
+
+    /**
      * 返回成功数据
      *
      * @return 成功消息
