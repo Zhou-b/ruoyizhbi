@@ -14,6 +14,13 @@
     </description>
     <dependencies>
 
+        <!--lombok插件 begin-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--lombok插件 end-->
+
         <!-- redis 缓存操作 begin-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

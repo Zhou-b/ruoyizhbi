@@ -1,17 +1,19 @@
-package com.yan2b.core.model.entity.sys;
+package com.yan2b.web.model.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.yan2b.core.base.BaseEntity;
 
+import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Date;
 
 /**
  * @author : Gangbb
- * @ClassName : SysOperationLog
- * @Description : 操作日志记录表 对应数据库(sys_operation_log)表
+ * @ClassName : SysOperationLogVO
+ * @Description : 操作日志记录展示类
  * @Date : 2021/3/7 14:08
  */
-public class SysOperationLog extends BaseEntity {
+
+public class SysOperationLogVO implements Serializable {
 
     /** 日志主键 */
     private Long id;
@@ -188,5 +190,27 @@ public class SysOperationLog extends BaseEntity {
 
     public void setOperationTime(Date operationTime) {
         this.operationTime = operationTime;
+    }
+
+    @Override
+    public String toString() {
+        return "SysOperationLogVO{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", businessType=" + businessType +
+                ", businessTypes=" + Arrays.toString(businessTypes) +
+                ", classMethod='" + classMethod + '\'' +
+                ", requestMethod='" + requestMethod + '\'' +
+                ", operatorType=" + operatorType +
+                ", operationName='" + operationName + '\'' +
+                ", operationUrl='" + operationUrl + '\'' +
+                ", operationIp='" + operationIp + '\'' +
+                ", operationLocation='" + operationLocation + '\'' +
+                ", operationParam='" + operationParam + '\'' +
+                ", jsonResult='" + jsonResult + '\'' +
+                ", operationStatus=" + operationStatus +
+                ", errorMsg='" + errorMsg + '\'' +
+                ", operationTime=" + operationTime +
+                '}';
     }
 }

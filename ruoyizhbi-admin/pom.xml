@@ -22,6 +22,22 @@
         </dependency>
         <!--mysql驱动 end-->
 
+        <!--Spring boot 测试 begin-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <!--以下是排除的组件-->
+            <exclusions>
+                <!--排除默认自带的log组件-->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--Spring boot 测试 end-->
+
         <!-- spring-boot-devtools:支持热部署启动jar包  begin-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

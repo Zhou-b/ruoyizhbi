@@ -1,6 +1,7 @@
-package com.yan2b.core.model;
+package com.yan2b.core.base;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+
 
 import java.io.Serializable;
 import java.util.Date;

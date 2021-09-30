@@ -31,6 +31,30 @@
     <dependencyManagement>
         <dependencies>
 
+            <!--lombok插件 begin-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+            </dependency>
+            <!--lombok插件 end-->
+
+            <!--mapStruct依赖 begin-->
+            <!--mapStruct依赖 高性能对象映射-->
+            <!--mapstruct核心-->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>1.5.0.Beta1</version>
+            </dependency>
+            <!--mapstruct编译-->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>1.5.0.Beta1</version>
+            </dependency>
+            <!--mapStruct依赖 end-->
+
             <!--阿里数据库连接池 begin-->
             <dependency>
                 <groupId>com.alibaba</groupId>

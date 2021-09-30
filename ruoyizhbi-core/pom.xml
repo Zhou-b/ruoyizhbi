@@ -15,6 +15,20 @@
     </description>
     <dependencies>
 
+        <!--mapStruct依赖 begin-->
+        <!--mapStruct依赖 高性能对象映射-->
+        <!--mapstruct核心-->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <!--mapstruct编译-->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+        </dependency>
+        <!--mapStruct依赖 end-->
+
         <!-- 阿里数据库连接池 begin-->
         <dependency>
             <groupId>com.alibaba</groupId>

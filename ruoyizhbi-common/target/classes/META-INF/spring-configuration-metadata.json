@@ -17,7 +17,8 @@
       "name": "gangbb.demo-enabled",
       "type": "java.lang.Boolean",
       "description": "实例演示开关",
-      "sourceType": "com.yan2b.common.config.GangbbConfig"
+      "sourceType": "com.yan2b.common.config.GangbbConfig",
+      "defaultValue": false
     },
     {
       "name": "gangbb.name",

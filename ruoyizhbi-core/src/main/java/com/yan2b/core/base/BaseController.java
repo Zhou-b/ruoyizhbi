@@ -1,4 +1,4 @@
-package com.yan2b.core.controller;
+package com.yan2b.core.base;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
