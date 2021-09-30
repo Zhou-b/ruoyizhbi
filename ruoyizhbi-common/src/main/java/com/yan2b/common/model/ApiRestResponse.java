@@ -15,7 +15,6 @@ import java.util.LinkedHashMap;
  * @Description : 统一结果返回
  * @Date : 2021/3/9 19:35
  */
-
 public class ApiRestResponse extends LinkedHashMap<String, Object>
 {
     private static final long serialVersionUID = 1L;

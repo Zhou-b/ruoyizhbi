@@ -11,7 +11,6 @@ import com.yan2b.web.model.entity.TestMybatis;
 import com.yan2b.web.model.vo.SysOperationLogVO;
 import com.yan2b.web.service.TestMybatisService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -13,6 +13,12 @@
         common通用工具模块
     </description>
     <dependencies>
+        <!-- spring security 安全认证 begin-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- spring security 安全认证 end-->
 
         <!--lombok插件 begin-->
         <dependency>
