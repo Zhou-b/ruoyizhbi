@@ -123,6 +123,12 @@
       <appender-ref ref="Console"/>
     </logger>
 
+    <!-- 设置 注解参数校验类annotation.ExceptionHandlerExceptionResolve 的日志只打印ERROR及以上级别的日志 -->
+    <logger name="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver"
+            level="ERROR" additivity="false">
+      <appender-ref ref="Console"/>
+    </logger>
+
     <!-- 设置org.apache包下的日志只打印WARN及以上级别的日志 -->
 <!--    <logger name="org.apache" level="WARN" additivity="false">-->
 <!--      <appender-ref ref="Console"/>-->

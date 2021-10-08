@@ -4,7 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yan2b.core.base.BaseController;
 import com.yan2b.core.model.entity.sys.SysOperationLog;
-import com.yan2b.core.model.page.TableDataInfo;
+import com.yan2b.core.model.vo.TableDataInfoVO;
 import com.yan2b.core.service.SysOperationLogService;
 import com.yan2b.web.mapstruct.SysOperatorLogTranslateMapper;
 import com.yan2b.web.model.entity.TestMybatis;
@@ -70,12 +70,12 @@ public class TestMybatisController extends BaseController {
     }
 
     /**
-     * 查询列表，分页。 返回若依封装的 TableDataInfo
+     * 查询列表，分页。 返回若依封装的 TableDataInfoVO
      *
      * @return
      */
     @GetMapping("/page")
-    public TableDataInfo testPageHelper() {
+    public TableDataInfoVO testPageHelper() {
         // 开启分页
         startPage();
         List<SysOperationLog> sysOperationLogs = sysOperationLogService.selectAll();

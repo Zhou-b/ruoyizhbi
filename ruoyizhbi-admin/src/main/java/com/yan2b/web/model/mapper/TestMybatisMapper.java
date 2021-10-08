@@ -1,4 +1,4 @@
-package com.yan2b.web.model.dao;
+package com.yan2b.web.model.mapper;
 
 import com.yan2b.web.model.entity.TestMybatis;
 import org.apache.ibatis.annotations.Mapper;

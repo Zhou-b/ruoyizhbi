@@ -2,9 +2,12 @@ package com.yan2b.common.model;
 
 
 
+import com.yan2b.common.exception.ApiException;
 import com.yan2b.common.utils.MessageUtils;
 import com.yan2b.common.utils.ServletUtils;
 import com.yan2b.common.utils.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedHashMap;
 
@@ -17,6 +20,9 @@ import java.util.LinkedHashMap;
  */
 public class ApiRestResponse extends LinkedHashMap<String, Object>
 {
+    /** 日志记录 */
+    private static final Logger log = LoggerFactory.getLogger(ApiException.class);
+
     private static final long serialVersionUID = 1L;
 
 
@@ -122,6 +128,16 @@ public class ApiRestResponse extends LinkedHashMap<String, Object>
      */
     public static ApiRestResponse error(String code, String msg)
     {
+        // 如果填了错误信息 错误信息 = 状态码对应的信息 + 输入的信息
+        if(StringUtils.isNotEmpty(code) && StringUtils.isNotEmpty(msg)){
+            String codeDefaultMsg = MessageUtils.getMessageByCode(code);
+            if(!msg.equals(codeDefaultMsg)){
+                msg = codeDefaultMsg + "。[具体信息] :" + msg;
+            }
+        }else {
+            return ApiRestResponse.error();
+        }
+        log.error(msg);
         return new ApiRestResponse(code, msg);
     }
 

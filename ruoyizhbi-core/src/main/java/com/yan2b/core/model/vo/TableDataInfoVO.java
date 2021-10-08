@@ -1,8 +1,8 @@
-package com.yan2b.core.model.page;
+package com.yan2b.core.model.vo;
 
 /**
  * @author : Gangbb
- * @ClassName : TableDataInfo
+ * @ClassName : TableDataInfoVO
  * @Description : 表格分页数据对象
  * @Date : 2021/3/12 21:48
  */
@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-public class TableDataInfo implements Serializable
+public class TableDataInfoVO implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
@@ -30,7 +30,7 @@ public class TableDataInfo implements Serializable
     /**
      * 表格数据对象
      */
-    public TableDataInfo()
+    public TableDataInfoVO()
     {
     }
 
@@ -40,7 +40,7 @@ public class TableDataInfo implements Serializable
      * @param list 列表数据
      * @param total 总记录数
      */
-    public TableDataInfo(List<?> list, int total)
+    public TableDataInfoVO(List<?> list, int total)
     {
         this.rows = list;
         this.total = total;

@@ -1,9 +1,13 @@
 package com.yan2b.core.model.page;
 
 
+import com.yan2b.common.utils.ServletUtils;
 import com.yan2b.common.utils.StringUtils;
+import com.yan2b.core.model.page.TableSupport;
 
 import javax.validation.constraints.Max;
+
+
 
 /**
  * @author : Gangbb
@@ -11,7 +15,7 @@ import javax.validation.constraints.Max;
  * @Description : 分页数据
  * @Date : 2021/3/12 21:41
  */
-public class PageDto {
+public class PageDTO {
 
     /** 当前记录起始索引 */
     @Max(9999)
@@ -25,6 +29,25 @@ public class PageDto {
 
     /** 排序的方向desc或者asc */
     private String isAsc = "asc";
+
+    /**
+     * 封装分页对象
+     */
+    public static PageDTO getMyPage()
+    {
+        PageDTO myyPage = new PageDTO();
+        // 获取请求参数中的各项值
+        myyPage.setPageNum(ServletUtils.getParameterToInt(TableSupport.PAGE_NUM));
+        myyPage.setPageSize(ServletUtils.getParameterToInt(TableSupport.PAGE_SIZE));
+        myyPage.setOrderByColumn(ServletUtils.getParameter(TableSupport.ORDER_BY_COLUMN));
+        myyPage.setIsAsc(ServletUtils.getParameter(TableSupport.IS_ASC));
+        return myyPage;
+    }
+
+    public static PageDTO buildPageRequest()
+    {
+        return getMyPage();
+    }
 
     public String getOrderBy()
     {

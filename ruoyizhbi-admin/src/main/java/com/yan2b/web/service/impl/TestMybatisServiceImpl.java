@@ -1,6 +1,6 @@
 package com.yan2b.web.service.impl;
 
-import com.yan2b.web.model.dao.TestMybatisMapper;
+import com.yan2b.web.model.mapper.TestMybatisMapper;
 import com.yan2b.web.model.entity.TestMybatis;
 import com.yan2b.web.service.TestMybatisService;
 import org.springframework.stereotype.Service;

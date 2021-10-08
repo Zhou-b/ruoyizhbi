@@ -1,4 +1,4 @@
-package com.yan2b.core.model.dao;
+package com.yan2b.core.model.mapper;
 
 import com.yan2b.core.model.entity.sys.SysOperationLog;
 

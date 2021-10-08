@@ -22,7 +22,7 @@ import java.util.TimeZone;
 // 解决aop自调用中,调用的内部方法无法执行拦截的逻辑问题
 @EnableAspectJAutoProxy(exposeProxy = true)
 // 指定要扫描的Mapper类的包的路径
-@MapperScan("com.yan2b.**.dao")
+@MapperScan("com.yan2b.**.mapper")
 public class ApplicationConfig {
     /**
      * 时区配置

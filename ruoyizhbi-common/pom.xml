@@ -98,5 +98,11 @@
         </dependency>
         <!-- pagehelper 分页插件 end-->
 
+        <!--参数校验依赖(主要) begin-->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+        </dependency>
+        <!--参数校验依赖 end-->
     </dependencies>
 </project>

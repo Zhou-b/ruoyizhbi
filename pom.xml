@@ -71,6 +71,14 @@
             </dependency>
             <!-- pageHelper 分页插件 end-->
 
+            <!--参数校验依赖 begin-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+            </dependency>
+            <!--参数校验依赖 end-->
+
+
             <!-- SpringBoot的依赖配置:包含大多数依赖的版本号 begin-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

@@ -1,8 +1,5 @@
 package com.yan2b.core.model.page;
 
-
-import com.yan2b.common.utils.ServletUtils;
-
 /**
  * @author : Gangbb
  * @ClassName : TableSupport
@@ -35,18 +32,19 @@ public class TableSupport
     /**
      * 封装分页对象
      */
-    public static PageDto getMyPage()
-    {
-        PageDto myyPage = new PageDto();
-        myyPage.setPageNum(ServletUtils.getParameterToInt(PAGE_NUM));
-        myyPage.setPageSize(ServletUtils.getParameterToInt(PAGE_SIZE));
-        myyPage.setOrderByColumn(ServletUtils.getParameter(ORDER_BY_COLUMN));
-        myyPage.setIsAsc(ServletUtils.getParameter(IS_ASC));
-        return myyPage;
-    }
-
-    public static PageDto buildPageRequest()
-    {
-        return getMyPage();
-    }
+//    public static PageDTO getMyPage()
+//    {
+//        PageDTO myyPage = new PageDTO();
+//        // 获取请求参数中的各项值
+//        myyPage.setPageNum(ServletUtils.getParameterToInt(PAGE_NUM));
+//        myyPage.setPageSize(ServletUtils.getParameterToInt(PAGE_SIZE));
+//        myyPage.setOrderByColumn(ServletUtils.getParameter(ORDER_BY_COLUMN));
+//        myyPage.setIsAsc(ServletUtils.getParameter(IS_ASC));
+//        return myyPage;
+//    }
+//
+//    public static PageDTO buildPageRequest()
+//    {
+//        return getMyPage();
+//    }
 }

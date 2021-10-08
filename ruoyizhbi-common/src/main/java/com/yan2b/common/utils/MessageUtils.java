@@ -45,8 +45,9 @@ public class MessageUtils
         try {
             message =  messageSource.getMessage(key, null, LocaleContextHolder.getLocale());
         } catch (NoSuchMessageException e) {
-            log.warn("没有[" + code + "]该错误码");
-            throw new ApiException("B0001");
+            String msg = "没有[" + code + "]该错误码";
+            log.error(msg);
+            throw new ApiException("B0001", msg);
         }
         return message;
     }

@@ -1,6 +1,6 @@
 package com.yan2b.core.service.impl;
 
-import com.yan2b.core.model.dao.SysOperationLogMapper;
+import com.yan2b.core.model.mapper.SysOperationLogMapper;
 import com.yan2b.core.model.entity.sys.SysOperationLog;
 import com.yan2b.core.service.SysOperationLogService;
 import org.springframework.beans.factory.annotation.Autowired;

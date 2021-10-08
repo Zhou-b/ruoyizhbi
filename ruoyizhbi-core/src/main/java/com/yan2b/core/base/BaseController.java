@@ -7,9 +7,8 @@ import com.yan2b.common.model.ApiRestResponse;
 import com.yan2b.common.utils.DateUtils;
 import com.yan2b.common.utils.StringUtils;
 import com.yan2b.common.utils.sql.SqlUtil;
-import com.yan2b.core.model.page.PageDto;
-import com.yan2b.core.model.page.TableDataInfo;
-import com.yan2b.core.model.page.TableSupport;
+import com.yan2b.core.model.page.PageDTO;
+import com.yan2b.core.model.vo.TableDataInfoVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.WebDataBinder;
@@ -51,7 +50,7 @@ public class BaseController {
     protected void startPage()
     {
         //从前端获取分页参数
-        PageDto myPage = TableSupport.buildPageRequest();
+        PageDTO myPage = PageDTO.buildPageRequest();
         Integer pageNum = myPage.getPageNum();
         Integer pageSize = myPage.getPageSize();
         if (StringUtils.isNotNull(pageNum) && StringUtils.isNotNull(pageSize))
@@ -65,9 +64,9 @@ public class BaseController {
      * 响应请求分页数据
      */
     @SuppressWarnings({ "rawtypes", "unchecked" })
-    protected TableDataInfo getDataTable(List<?> list)
+    protected TableDataInfoVO getDataTable(List<?> list)
     {
-        TableDataInfo rspData = new TableDataInfo();
+        TableDataInfoVO rspData = new TableDataInfoVO();
         rspData.setCode(HttpStatus.SUCCESS);
         rspData.setMsg("查询成功");
         rspData.setRows(list);
@@ -91,6 +90,6 @@ public class BaseController {
      */
     public String redirect(String url)
     {
-        return StringUtils.format("redirect:{}", url);
-    }
+        return StringUtils.format("redirect:{}", url);}
+
 }
